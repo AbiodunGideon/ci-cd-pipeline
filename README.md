@@ -61,7 +61,7 @@ stays green even though findings exist. ZAP's report is under the run's Artifact
 **2. Hard gate.** On a throwaway branch, add a fake secret, e.g. in `App.java`:
 
 ```java
-String api_key = "9f8e7d6c5b4a39281706f5e4d3c2b1a0";
+String api_key = "<random 32-char hex string>";
 ```
 
 Open a PR. `Secret scan` should fail and block merging, while the other jobs
